@@ -34,10 +34,13 @@ class Product():
         Returns:
             None: No Returns
         """
+        import workplace
+
         worker.money-=self.cost
-        if self.workplace != None:
-            pass # Do workplace money stuff
-    
+        if isinstance(self.workplace,workplace.Workplace):
+            pass
+            
+
 class Foodstuff(Product):
 
     def __init__(self):

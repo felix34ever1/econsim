@@ -22,6 +22,13 @@ class Worker():
 
         # Performance
         self.performance = round(random.random(),2)
+        self.salary = 0
+
+        # Employment status
+        self.employed_at:object = None
+
+    def considerEmployment(self):
+        pass
 
     def checkMarket(self,market:set):
         """Looks at all market items, calculates attractiveness, and picks items to buy, until choosing the one stopViewingMarket item after which the worker stops.
